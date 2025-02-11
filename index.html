@@ -62,6 +62,11 @@
         .bold {
             font-weight: bold;
         }
+        .whatsapp-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -77,7 +82,9 @@
     <div id="popup" class="popup">
         <div class="popup-content">
             <p><strong>Nombre:</strong> Juan Ayala</p>
-            <p><strong>WhatsApp:</strong> +54 3482 712477</p>
+            <p><strong>WhatsApp:</strong> 
+                <a id="whatsapp-link" class="whatsapp-link" href="https://wa.me/543482712477" target="_blank">+54 3482 712477</a>
+            </p>
             <p><strong>PayPal:</strong> <span id="paypal">zonadetrabajo2017@gmail.com</span></p>
             <p><strong>Binance (USDT TRC20):</strong> <span id="binance">ID Binance 19395682</span></p>
             <button onclick="cerrarPopup()">Cerrar</button>
