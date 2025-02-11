@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una oportunidad de ayudar a las personas, gracias a las donaciones voluntarias.">
+    <title>Economía Colaborativa Global</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #008000;
+        }
+        p {
+            color: #000;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+        .button {
+            background-color: #008000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #006400;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 400px;
+        }
+        .popup-content {
+            text-align: left;
+        }
+        .popup button {
+            margin-top: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Economía Colaborativa Global</h1>
+    <p><strong>Hoy tienes la oportunidad de ayudar a alguien</strong> con una donación única de <strong>10 Dólares</strong> o <strong>10 USDT TRC20</strong> y gracias a esa donación, acceder a una herramienta poderosa que te permitirá recibir 10 USDT cada vez que una persona quiera ingresar a tu sistema.</p>
+    <p>Este sistema está pensado para ayudar a las personas a generar ingresos mediante donaciones voluntarias.</p>
+    <p>Esto es una donación sincera para que todo el mundo pueda hacer uso de ella. Esto forma parte de una <strong class="bold">economía colaborativa global</strong>.</p>
+    <p>Tú donas 10 USDT y tienes la posibilidad de adquirir este mismo sistema para replicarlo cuantas veces quieras.</p>
+    <p>Nadie está obligado a participar y cada usuario es responsable de sus actos. Ni el sistema ni quien lo creó se hace responsable por el mal uso del sistema o la mala fe del usuario que comparte el sistema.</p>
+    <button class="button" onclick="mostrarPopup()">Contactar</button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p><strong>Nombre:</strong> Juan Ayala</p>
+            <p><strong>WhatsApp:</strong> +54 3482 712477</p>
+            <p><strong>PayPal:</strong> <span id="paypal">tu-correo-paypal@example.com</span></p>
+            <p><strong>Binance (USDT TRC20):</strong> <span id="binance">tu-dirección-binance</span></p>
+            <button onclick="cerrarPopup()">Cerrar</button>
+        </div>
+    </div>
+    <p>Al tratarse de colaboraciones voluntarias, nadie tiene derecho a reclamar nada. Cada usuario es responsable de su decisión y del uso que le dé a este sistema.</p>
+    <script>
+        function mostrarPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+        function cerrarPopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
